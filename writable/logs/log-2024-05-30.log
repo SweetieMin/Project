@@ -1,0 +1,98 @@
+CRITICAL - 2024-05-30 13:22:52 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2024-05-30 14:41:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR UNSIGNED NOT NULL,
+	`picture` VARCHAR ...' at line 4 in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\Project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\Project\app\Database\Migrations\2024-05-30-142734_CreatUserTable.php(42): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreatUserTable->up()
+#6 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-30 14:46:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR UNSIGNED NOT NULL,
+	`picture` VARCHAR ...' at line 4 in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\Project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\Project\app\Database\Migrations\2024-05-30-142734_CreatUserTable.php(42): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreatUserTable->up()
+#6 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-30 14:48:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR UNSIGNED NOT NULL,
+	`picture` VARCHAR ...' at line 4 in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\Project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\Project\app\Database\Migrations\2024-05-30-142734_CreatUserTable.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreatUserTable->up()
+#6 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-30 14:57:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'updated current_timestamp,
+	CONSTRAINT `pk_users` PRIMARY KEY(`id`)
+) DEFAULT...' at line 9 in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\Project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\Project\app\Database\Migrations\2024-05-30-142734_CreatUserTable.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUserTable->up()
+#6 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-30 15:01:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'updated current_timestamp,
+	CONSTRAINT `pk_users` PRIMARY KEY(`id`)
+) DEFAULT...' at line 9 in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\Project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\Project\app\Database\Migrations\2024-05-30-142734_CreatUserTable.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUserTable->up()
+#6 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-30 15:13:16 --> mysqli_sql_exception: Unknown column 'namespace' in 'where clause' in C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Project\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(662): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->getHistory('')
+#6 C:\xampp\htdocs\Project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\Project\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\Project\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
